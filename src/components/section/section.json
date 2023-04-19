@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_section_sections",
+  "info": {
+    "displayName": "Section"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Content": {
+      "type": "richtext"
+    },
+    "Buttontext": {
+      "type": "string"
+    },
+    "Buttonlink": {
+      "type": "string"
+    }
+  }
+}

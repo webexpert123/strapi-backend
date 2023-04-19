@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_header_headers",
+  "info": {
+    "displayName": "Header"
+  },
+  "options": {},
+  "attributes": {
+    "Logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Menulink": {
+      "displayName": "Link",
+      "type": "component",
+      "repeatable": true,
+      "component": "header.link"
+    }
+  }
+}
