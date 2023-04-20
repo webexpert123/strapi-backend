@@ -1,0 +1,32 @@
+services:
+  - type: web
+    name: strapi-backend
+    env: node
+    plan: starter
+    buildCommand: yarn install && yarn build
+    startCommand: yarn develop
+    healthCheckPath: /_health
+    autoDeploy: true
+    disk:
+      name: strapi-uploads
+      mountPath: /opt/render/project/src/public/uploads
+      sizeGB: 1
+    envVars:
+      - key: NODE_VERSION
+        value: ~18.16.0
+      - key: NODE_ENV
+        value: production
+      - key: postgres://strapi_backend_user:0W24SYCxEoNS3ceLF9p0t461czezSt0j@dpg-ch0dmgb3cv2c5b3ft3k0-a/strapi_backend
+        fromDatabase:
+          name: strapi_backend
+          property: connectionString
+      - key: nTIsBPDQG63nIZbRogDPyA==
+        generateValue: true
+      - key: bEjRcEL9FnCpXJC1uhKGcw==
+        generateValue: true
+      - key: ZLwLMH0tVXidjQrkishNyQ==,IY0P+CKfasHQaf8kE/s1PQ==,s2Ad3wqbFci9lkMcnCChxw==,2iXpUuq2tuaulpXhtuzU0w==
+        generateValue: true
+
+databases:
+  - name: strapi_backend
+    plan: starter
