@@ -16,16 +16,16 @@ services:
         value: ~18.16.0
       - key: NODE_ENV
         value: production
-      - key: DATABASE_URL
-        value: postgres://strapi_backend_user:0W24SYCxEoNS3ceLF9p0t461czezSt0j@dpg-ch0dmgb3cv2c5b3ft3k0-a/strapi_backend
-      - key: JWT_SECRET
-        value: nTIsBPDQG63nIZbRogDPyA==
+      # - key: DATABASE_URL
+      #   value: postgres://strapi_backend_user:0W24SYCxEoNS3ceLF9p0t461czezSt0j@dpg-ch0dmgb3cv2c5b3ft3k0-a/strapi_backend
+      # - key: JWT_SECRET
+      #   value: nTIsBPDQG63nIZbRogDPyA==
         # generateValue: true
-      - key: ADMIN_JWT_SECRET
-        value: bEjRcEL9FnCpXJC1uhKGcw==
+      # - key: ADMIN_JWT_SECRET
+      #   value: bEjRcEL9FnCpXJC1uhKGcw==
         # generateValue: true
-      - key: APP_KEYS
-        value: ZLwLMH0tVXidjQrkishNyQ==,IY0P+CKfasHQaf8kE/s1PQ==,s2Ad3wqbFci9lkMcnCChxw==,2iXpUuq2tuaulpXhtuzU0w==
+      # - key: APP_KEYS
+      #   value: ZLwLMH0tVXidjQrkishNyQ==,IY0P+CKfasHQaf8kE/s1PQ==,s2Ad3wqbFci9lkMcnCChxw==,2iXpUuq2tuaulpXhtuzU0w==
         # generateValue: true
 
 databases:
