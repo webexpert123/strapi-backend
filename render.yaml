@@ -16,10 +16,10 @@ services:
         value: ~18.16.0
       - key: NODE_ENV
         value: production
-      - key: postgres://strapi_backend_user:0W24SYCxEoNS3ceLF9p0t461czezSt0j@dpg-ch0dmgb3cv2c5b3ft3k0-a/strapi_backend
+      - key: postgres://strapi_backend_user:0W24SYCxEoNS3ceLF9p0t461czezSt0j@dpg-ch0dmgb3cv2c5b3ft3k0-a.oregon-postgres.render.com/strapi_backend
         fromDatabase:
-          name: strapi_backend
-          property: connectionString
+          name: postgresql
+          property: postgres://strapi_backend_user:0W24SYCxEoNS3ceLF9p0t461czezSt0j@dpg-ch0dmgb3cv2c5b3ft3k0-a.oregon-postgres.render.com/strapi_backend
       - key: nTIsBPDQG63nIZbRogDPyA==
         generateValue: true
       - key: bEjRcEL9FnCpXJC1uhKGcw==

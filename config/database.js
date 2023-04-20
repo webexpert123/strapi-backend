@@ -3,7 +3,7 @@ module.exports = ({ env }) => ({
   connection:{
     client :"postgres",
     connection:{
-      host: env('DATABASE_HOST', 'dpg-ch0dmgb3cv2c5b3ft3k0-a.oregon-postgres.render.com'),
+      host: env('DATABASE_HOST', 'dpg-ch0dmgb3cv2c5b3ft3k0-a'),
       port: env.int('DATABASE_PORT', 5432),
       database: env('DATABASE_NAME', 'strapi_backend'),
       user: env('DATABASE_USERNAME', 'strapi_backend_user'),
