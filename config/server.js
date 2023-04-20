@@ -7,4 +7,9 @@ module.exports = ({ env }) => ({
   webhooks: {
     populateRelations: env.bool('WEBHOOKS_POPULATE_RELATIONS', false),
   },
+  // other server configuration options...
+  server: {
+    // other server settings...
+    keys: ['myKeyA', 'myKeyB'] // set app.keys
+  },
 });
