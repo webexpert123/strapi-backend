@@ -10,6 +10,7 @@ module.exports = ({ env }) => ({
   // other server configuration options...
   server: {
     // other server settings...
-    keys: ['myKeyA', 'myKeyB'] // set app.keys
+    // keys: ['myKeyA', 'myKeyB'] // set app.keys
+    keys: env('APP_KEYS').split(',') // set app.keys from env variable
   },
 });
